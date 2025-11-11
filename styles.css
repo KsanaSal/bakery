@@ -103,6 +103,22 @@ button {
     text-align: inherit;
 }
 
+.section {
+    padding: 80px 0;
+}
+
+.container {
+    padding: 0 30px;
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+.gradient-text {
+    background: var(--color-liner);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Header styles */
 .header {
     padding: 0 30px;
@@ -137,4 +153,71 @@ button {
 .header-icons {
     display: flex;
     gap: 8px;
+}
+
+/* Hero styles */
+.hero {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 574px;
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+}
+.hero-description {
+    max-width: 500px;
+}
+.hero-button {
+    padding: 16px 12px;
+    background: var(--color-brand-medium);
+    border-radius: 10px;
+    color: var(--color-light);
+    font-weight: 500;
+    max-width: 150px;
+    text-align: center;
+}
+.hero-social {
+    display: flex;
+    gap: 12px;
+}
+.hero-social_icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    fill: var(--color-brand-dark);
+}
+.hero-donuts {
+    position: relative;
+}
+.hero-donuts_img {
+    position: relative;
+    z-index: 1;
+    width: 730px;
+    height: 460px;
+}
+.hero-donuts_ellipse {
+    position: absolute;
+    left: 50%;
+    bottom: -32px;
+    transform: translateX(-50%);
+    width: 330px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(40.4px);
 }
