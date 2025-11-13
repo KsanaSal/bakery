@@ -17,12 +17,12 @@
                     <li><a href="#blog">Blog</a></li>
                 </ul>
                 <div class="header-buttons">
-                    <button>Login/Register</button>
+                    <button class="header-button">Login/Register</button>
                     <div class="header-icons">
-                        <button>
+                        <button class="icon-button">
                             <img src="./images/svg/heart.svg" alt="Heart" />
                         </button>
-                        <button>
+                        <button class="icon-button">
                             <img src="./images/svg/basket.svg" alt="Basket" />
                         </button>
                     </div>
@@ -40,7 +40,7 @@
                             Customized cakes, treats and every thing sweet for
                             all your special moments.
                         </p>
-                        <button class="hero-button">Shop Now</button>
+                        <button class="button hero-button">Shop Now</button>
                         <ul class="hero-social">
                             <li>
                                 <a href="#">
@@ -82,18 +82,19 @@
                 </div>
                 <img src="./images/hero/arrows.png" alt="Arrows" />
             </section>
-            <section class="section container collection">
+            <section id="services" class="section container collection">
                 <div class="collection-text">
                     <span>See Collection</span>
                     <h2 class="collection-title">
                         OUR FINE HOME MADE CHOCOLATES
                     </h2>
                 </div>
-                <div>
                 <ul class="collection-list">
                     <li class="collection-list_item">
                         <div class="collection-list_wrapper">
-                            <span class="collection-list_ellipse collection-list_ellipse--violet"></span>
+                            <span
+                                class="collection-list_ellipse collection-list_ellipse--violet"
+                            ></span>
                             <span class="collection-list_line"></span>
                             <div class="collection-img_wrapper">
                                 <img
@@ -109,7 +110,9 @@
                     </li>
                     <li class="collection-list_item">
                         <div class="collection-list_wrapper">
-                            <span class="collection-list_ellipse collection-list_ellipse--blue"></span>
+                            <span
+                                class="collection-list_ellipse collection-list_ellipse--blue"
+                            ></span>
                             <span class="collection-list_line"></span>
                             <div class="collection-img_wrapper">
                                 <img
@@ -126,7 +129,9 @@
                     </li>
                     <li class="collection-list_item">
                         <div class="collection-list_wrapper">
-                            <span class="collection-list_ellipse collection-list_ellipse--pink"></span>
+                            <span
+                                class="collection-list_ellipse collection-list_ellipse--pink"
+                            ></span>
                             <span class="collection-list_line"></span>
                             <div class="collection-img_wrapper">
                                 <img
@@ -144,37 +149,128 @@
                 </ul>
             </section>
             <section class="section container sellers">
-                <h2>OUR BEST SELLERS</h2>
-                <span>See All</span>
-                <ul>
-                    <li>
-                        <h3>3-tier red velvet cake</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor.
-                        </p>
-                        <p>45.90 €</p>
-                        <button>Add to Cart</button>
-                    </li>
-                    <li>
-                        <h3>3-tier red velvet cake</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor.
-                        </p>
-                        <p>45.90 €</p>
-                        <button>Add to Cart</button>
-                    </li>
-                    <li>
-                        <h3>3-tier red velvet cake</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor.
-                        </p>
-                        <p>45.90 €</p>
-                        <button>Add to Cart</button>
-                    </li>
-                </ul>
+                <div class="sellers-header">
+                    <span class="sellers-line"></span>
+                    <div class="sellers-text">
+                        <h2 class="sellers-title gradient-text">
+                            OUR BEST SELLERS
+                        </h2>
+                    </div>
+                </div>
+                <div class="sellers-list">
+                    <span class="sellers-list_text">See All</span>
+                    <ul class="list-cards">
+                        <li class="list-card">
+                            <div class="list-card_wrapper">
+                                <div class="list-card_img">
+                                    <button class="icon-button list-card-heart">
+                                        <img
+                                            src="./images/svg/heart.svg"
+                                            alt="Heart"
+                                        />
+                                    </button>
+                                    <img
+                                        class="img-card"
+                                        src="./images/sellers/cake-child.png"
+                                        alt="Taste of childhood"
+                                    />
+                                </div>
+                                <h3 class="list-card_title">
+                                    2-tier cake "Taste of childhood"
+                                </h3>
+                                <p>
+                                    Each bite is soft, sweet and cozy — like a
+                                    vanilla sponge cake soaked in a light syrup,
+                                    covered in a silky cream that melts on your
+                                    tongue. The taste is delicately buttery and
+                                    milky, with a slight hint of caramel or
+                                    condensed milk sweetness.
+                                </p>
+                            </div>
+                            <div class="list-card_price">
+                                <span class="list-card_price-value"
+                                    >35.90 €</span
+                                >
+                                <button class="button">Add to Cart</button>
+                            </div>
+                        </li>
+                        <li class="list-card">
+                            <div class="list-card_wrapper">
+                                <div class="list-card_img">
+                                    <button class="icon-button list-card-heart">
+                                        <img
+                                            src="./images/svg/heart.svg"
+                                            alt="Heart"
+                                        />
+                                    </button>
+                                    <img
+                                        class="img-card"
+                                        src="./images/sellers/cake-souffle.png"
+                                        alt="Crispy souffle"
+                                    />
+                                </div>
+                                <h3 class="list-card_title">
+                                    3-tiered cake "Crispy souffle"
+                                </h3>
+                                <p>
+                                    The crispy layers give a nice crunch, and
+                                    when combined with the soufflé, this cake is
+                                    both cozy and elegant. The cake is light as
+                                    a cloud, with a delicate sweetness, with
+                                    barely noticeable notes of cream and
+                                    meringue.
+                                </p>
+                            </div>
+                            <div class="list-card_price">
+                                <span class="list-card_price-value"
+                                    >45.90 €</span
+                                >
+                                <button class="button">Add to Cart</button>
+                            </div>
+                        </li>
+                        <li class="list-card">
+                            <div class="list-card_wrapper">
+                                <div class="list-card_img">
+                                    <button class="icon-button list-card-heart">
+                                        <img
+                                            src="./images/svg/heart.svg"
+                                            alt="Heart"
+                                        />
+                                    </button>
+                                    <img
+                                        class="img-card"
+                                        src="./images/sellers/cupcake-blue.png"
+                                        alt="Blue Cloud"
+                                    />
+                                </div>
+                                <h3 class="list-card_title">
+                                    "Blue Cloud" cupcakes
+                                </h3>
+                                <p>
+                                    They have a soft, fluffy vanilla base. The
+                                    frosting is smooth and creamy, with a subtle
+                                    hint of blueberry or cotton candy flavor
+                                    that gives it a "blue" hue. A delicate
+                                    balance between buttery sweetness and fruity
+                                    freshness makes every bite feel light.
+                                </p>
+                            </div>
+                            <div class="list-card_price">
+                                <span class="list-card_price-value"
+                                    >25.90 €</span
+                                >
+                                <button class="button">Add to Cart</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pagination-buttons">
+                    <span
+                        class="pagination-button pagination-button_active"
+                    ></span>
+                    <span class="pagination-button"></span>
+                    <span class="pagination-button"></span>
+                </div>
             </section>
             <section class="section container">
                 <h2>OUR NEW ARTICLES</h2>
