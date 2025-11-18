@@ -438,3 +438,145 @@ button {
 .pagination-button_active {
     background-color: var(--color-secondary-medium);
 }
+
+/* Article styles */
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 150px;
+}
+
+.articles-list {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+.articles-card {
+    position: relative;
+    width: 400px;
+    border-radius: 15px;
+    padding: 16px;
+    background-color: var(--color-light);
+    box-shadow: var(--shadow);
+}
+.articles-card_img-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.articles-card_img-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+    pointer-events: none;
+}
+
+.articles-card_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.articles-card_date-wrapper {
+    position: absolute;
+    top: 34px;
+    left: 34px;
+    width: 70px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0, 0.3);
+    padding: 14px 2px;
+    text-align: center;
+    z-index: 1;
+}
+.articles-card_date {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-light);
+}
+.articles-card_title {
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--color-text-dark);
+    margin: 16px 0;
+}
+.articles-card_text {
+    position: absolute;
+    bottom: 46px;
+    left: 50px;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--color-light);
+    width: 300px;
+}
+
+/* Stories styles */
+.stores {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+    padding-top: 160px;
+}
+.stores-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.stores-list_cards {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+.stores-list_card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 325px;
+    padding: 40px 50px;
+    background-color: var(--color-light);
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+}
+.stores-list_card-header {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+}
+.stores-list_card-header_img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #d9d9d9;
+}
+.stores-list_card-header_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.stores-list_card-header_text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.stores-list_card-header_name {
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--color-text-dark);
+}
+.stores-list_card-header_location {
+    font-size: 20px;
+    color: var(--color-medium);
+}
+.stores-list_card-text {
+    font-size: 20px;
+    color: var(--color-medium);
+}
